@@ -1,0 +1,23 @@
+#life-tracker, body, html {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(to right, cyan, #0655ff);
+}
+
+.year {
+  width: 100%;
+  display: flex;
+}
+
+.days-this-year {
+  height: 100%;
+}
+
+.today {
+  background-color: #bbbbbb;
+  height: 100%;
+}
+
+.lived {
+  background: #333333;
+}
