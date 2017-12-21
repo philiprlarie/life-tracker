@@ -1,6 +1,10 @@
 /* global $, moment */
-const YEARS_TO_LIVE = 76;
-const BIRTHDAY = '1992-12-07';
+const YEARS_TO_LIVE = window.localStorage.getItem('lifeExpectancy');
+const BIRTHDAY = window.localStorage.getItem('bdate');
+if (!BIRTHDAY || ! YEARS_TO_LIVE) {
+  window.alert("You must go to the settings for this extension and add your birthday.");
+}
+
 const now = moment();
 const bday = moment(BIRTHDAY);
 const daysOld = now.diff(bday, 'days');

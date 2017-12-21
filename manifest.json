@@ -3,4 +3,12 @@
   "name": "Life Tracker",
   "version": "1.0",
   "description": "Keep track of how long you've lived and how long you have left. A reminder to live every day to the fullest!",
+
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "storage"
+  ]
 }
