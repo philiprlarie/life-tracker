@@ -56,3 +56,7 @@ function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 $('title').html(`${numberWithCommas(daysOld)} days so far...`);
+
+setTimeout(() => {
+  $('.overlay').addClass('clear');
+}, 50);
